@@ -15,7 +15,7 @@ body {
   background-image: url(../img/Untitled-2.svg); }
 
 .section__Page {
-  margin-top: 1em; }
+  margin-top: 5%; }
 
 .main {
   width: 50%;
@@ -32,10 +32,31 @@ article h3 {
   margin-left: 45%; }
 
 .image__header {
-  position: absolute;
-  padding-left: 50%;
-  margin-top: -15%; }
+  padding-left: 50%; }
 
 .rocket__image {
   width: 37vw;
   height: 75%; }
+
+.icons {
+  margin-top: 10%;
+  margin-left: 10%; }
+  .icons i {
+    color: #971d50;
+    padding: 0.27em;
+    font-size: 4em; }
+
+.icons__background {
+  margin-left: 4%;
+  border-radius: 30%;
+  display: inline-block;
+  background-color: #fdfdfd;
+  height: 12vh;
+  width: 12%; }
+
+a {
+  padding-top: 100px;
+  color: red;
+  background-color: red;
+  height: 100px;
+  width: 100px; }
