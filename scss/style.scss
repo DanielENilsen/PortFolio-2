@@ -12,19 +12,18 @@ body {
     font-family: NasaFont;
     background-color: $FrontPageColor;
     color: white;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-
-   
+     overflow: hidden;   
 }
 
-.logo {
-    width: 6%;
-    height: 10vh;
-    margin:1.5em;
-    background-image: url(../img/Untitled-2.svg);  
+.imgLogo {
+   position: absolute;
+   margin: 3em;
+  
+    
 }
+
+
+
 
 .main {    
     margin-top: 18%;
@@ -77,18 +76,3 @@ article {
     height: 10vh;
     width: 13%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
