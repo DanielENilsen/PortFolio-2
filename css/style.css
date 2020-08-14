@@ -6,7 +6,9 @@ body {
   font-family: NasaFont;
   background-color: #010101;
   color: white;
-  position: relative; }
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; }
 
 .logo {
   width: 6%;
@@ -14,49 +16,43 @@ body {
   margin: 1.5em;
   background-image: url(../img/Untitled-2.svg); }
 
-.section__Page {
-  margin-top: 5%; }
-
 .main {
-  width: 50%;
+  margin-top: 18%;
+  width: 43%;
   float: left;
-  margin-top: 10%;
   margin-left: 5%; }
 
 article h1 {
-  font-size: 5em; }
+  font-size: 4.5em; }
 
 article h3 {
-  margin-top: -2.5em;
+  margin-top: -1.5em;
   font-size: 1.8em;
-  margin-left: 45%; }
+  margin-left: 35%; }
 
 .image__header {
-  padding-left: 50%; }
+  float: right;
+  padding-right: 10em;
+  margin-top: -5%; }
 
 .rocket__image {
-  width: 37vw;
-  height: 75%; }
+  width: 40vw; }
 
 .icons {
   margin-top: 10%;
   margin-left: 10%; }
   .icons i {
-    color: #971d50;
-    padding: 0.27em;
-    font-size: 4em; }
+    color: #1A1919;
+    padding: 0.30em;
+    font-size: 3.5em; }
+
+.extra {
+  margin-left: 15%; }
 
 .icons__background {
   margin-left: 4%;
   border-radius: 30%;
   display: inline-block;
   background-color: #fdfdfd;
-  height: 12vh;
-  width: 12%; }
-
-a {
-  padding-top: 100px;
-  color: red;
-  background-color: red;
-  height: 100px;
-  width: 100px; }
+  height: 10vh;
+  width: 13%; }
