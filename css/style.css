@@ -2,7 +2,7 @@
   font-family: NasaFont;
   src: url("../font/nasalization/nasalization-rg.ttf"); }
 
-body {
+.index_body {
   font-family: NasaFont;
   background-color: #010101;
   color: white;
@@ -52,3 +52,44 @@ article h3 {
   background-color: #fdfdfd;
   height: 10vh;
   width: 13%; }
+
+.spx__page {
+  background-color: #1A1919;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: NasaFont; }
+
+.header__menu {
+  float: right;
+  padding-right: 3%;
+  margin-top: 2%; }
+  .header__menu a {
+    float: left;
+    color: white;
+    padding: 1.5em;
+    text-decoration: none;
+    font-size: 1.5em; }
+
+.heroPage {
+  background-image: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+  background-size: cover; }
+
+.text__header {
+  margin-top: 15%;
+  margin-left: 10%;
+  font-size: 1.2em; }
+
+.icons__arrow {
+  margin-top: 20%;
+  margin-left: 50%;
+  font-size: 4em; }
+
+.icons__arrow__two {
+  font-size: 4em;
+  margin-left: 50%;
+  margin-top: -3%; }

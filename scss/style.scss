@@ -4,26 +4,21 @@
 }
 
 $darkBackgroundColor: #1A1919;
-$FrontPageColor:#010101;
+$frontPageColor:#010101;
 
+//Index WebPage
 
-
-body {
+.index_body {
     font-family: NasaFont;
-    background-color: $FrontPageColor;
+    background-color: $frontPageColor;
     color: white;
-     overflow: hidden;   
+    overflow: hidden;   
 }
 
 .imgLogo {
    position: absolute;
-   margin: 3em;
-  
-    
+   margin: 3em;    
 }
-
-
-
 
 .main {    
     margin-top: 18%;
@@ -40,33 +35,34 @@ article {
         margin-top: -1.5em; 
         font-size: 1.8em;
         margin-left: 35%;
-    }}
-
+    }
+}
 
 .image__header {      
     float: right;
     padding-right: 10em;  
-    margin-top: -5%;  
-
+    margin-top: -5%;
 }
+
 .rocket__image {
-    width: 40vw;     
-  
+    width: 40vw;  
 }
 
 .icons {
     margin-top: 10%;
     margin-left: 10%;
- 
+
     i {
         color:$darkBackgroundColor;
         padding: 0.30em;
         font-size: 3.5em;
     }
 }
+
 .extra {
     margin-left: 15%;
 }
+
 .icons__background {
 
     margin-left: 4%;
@@ -75,4 +71,57 @@ article {
     background-color: rgb(253, 253, 253);
     height: 10vh;
     width: 13%;
+}
+
+//spaceAct Site
+
+.spx__page {
+    background-color: $darkBackgroundColor;  
+    color: white;    
+    margin: 0px;
+    padding:0px;
+    font-family: NasaFont;
+    
+}
+
+.header__menu { 
+    float: right;
+    padding-right: 3%;
+    margin-top: 2%;  
+
+    a {
+        float: left;
+        color:white;    
+        padding: 1.5em;
+        text-decoration: none;
+        font-size: 1.5em;     
+   
+    }
+}
+
+
+
+.heroPage {
+    background-image: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    background-size: cover;    
+}
+
+.text__header { 
+    margin-top: 15%;
+    margin-left: 10%;
+    font-size: 1.2em;
+}
+.icons__arrow {
+    margin-top: 20%;
+    margin-left: 50%;
+    font-size: 4em;
+}
+.icons__arrow__two {
+    font-size: 4em;   
+    margin-left: 50%;
+    margin-top:-3%;
 }
