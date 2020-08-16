@@ -3,6 +3,7 @@
 var todayImage = "https://api.nasa.gov/planetary/apod?api_key=dPt8N9ZfiM5LXppEPE83Go0gQZCSyX9XbWlaQ3C9";
 var spaceXRockets = "https://api.spacexdata.com/v3/rockets";
 var humanLanuchRocket = "https://api.spacexdata.com/v4/launches/latest";
+var spaceXPastAndCurrectRockets = "https://api.spacexdata.com/v3/launches";
 
 
 //Fetch nasa`s today image
@@ -23,10 +24,14 @@ fetch(spaceXRockets).then(response => response.json()).then(spaceXRockets => {
     
 }).catch(error => console.log(error));
 
+//Fetch SpaceX past and currect rocket lanuch
+fetch(spaceXPastAndCurrectRockets).then(respone => respone.json()).then(spaxeXPastAndCurrect => { 
+    console.log(spaxeXPastAndCurrect);
+    pastAndCurrectFunc(spaxeXPastAndCurrect)
+}).catch(Error => console.log(Error));
 
 // Nasa Functions
-var imageOfToday = function(response) {
-    
+var imageOfToday = function(response) {    
     document.getElementById('nasaPictureLeft').innerHTML += `<h3> ${response.title}</h3> <p> ${response.explanation}</p>`;
     document.getElementById('nasaPictureRigth').innerHTML += `<img src = ${response.url}>`;
 }
@@ -39,13 +44,16 @@ var spaceXFunc = function(response) {
 
 
 // SpaceX diffrect rockets 
+var spaceXDiffRocketsFunc = function(respone) {    
+    document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3><a href = "#"> See more </a></div>`;
+    document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3></div>`;
+    document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3></div>`;
+}
 
-var spaceXDiffRocketsFunc = function(respone) { 
-    
-        document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3><a href = "#"> See more </a></div>`;
-        document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3></div>`;
-        document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3></div>`;
+// Past and Currect lanuch of SpaceX Function
+var pastAndCurrectFunc = function(respone) { 
+    for(let i = 0; i < respone.length; i++) { 
+        document.getElementById('spaceIdGrid').innerHTML += `<div class = "spxGrid"><img src="${respone[i].links.mission_patch_small}"</div>`
+    }
 
-    
-    
 }

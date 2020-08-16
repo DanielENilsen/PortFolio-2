@@ -193,18 +193,17 @@ article {
     background-color: #6B6B6B;
 }
 
-.gridbakcend { 
+.gridbakcend, .spaceXGrid { 
     display: grid;
     grid-template-columns: auto auto auto;
     padding-top: 5%;
     margin-left: 6%;
 }
 
-.gridCol {    
+.gridCol, .spxGrid{    
     display: inline-block;
     width: 75%;
-    height: 110%;
-   
+    height: 110%;   
     background-color: #242121;
     
     img {
@@ -226,8 +225,8 @@ article {
 .innerSection {
     margin: 8%;
     background-color: #2A2A2A; 
-    width: 85%;
-    height: 50vh;
+    width: 90%;
+    height: 60em;
 
     h1 {
         font-size: 3.5em;
@@ -255,9 +254,12 @@ article {
 }
 
 .spaceXGrid { 
-    width: 73%;
+    overflow: scroll;
+    width: 90%;
     background-color: #1E1E1E;
-    height: 10em;
-    margin-left: 15%;
+    height: 40em;
+    margin-left: 5%;
     margin-top:2%;
 }
+
+

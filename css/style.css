@@ -140,21 +140,21 @@ article h3 {
   height: 40em;
   background-color: #6B6B6B; }
 
-.gridbakcend {
+.gridbakcend, .spaceXGrid {
   display: grid;
   grid-template-columns: auto auto auto;
   padding-top: 5%;
   margin-left: 6%; }
 
-.gridCol {
+.gridCol, .spxGrid {
   display: inline-block;
   width: 75%;
   height: 110%;
   background-color: #242121; }
-  .gridCol img {
+  .gridCol img, .spxGrid img {
     width: 85%;
     padding: 2em; }
-  .gridCol a {
+  .gridCol a, .spxGrid a {
     color: white;
     padding: 0.6em;
     border: 2px solid white;
@@ -167,8 +167,8 @@ article h3 {
 .innerSection {
   margin: 8%;
   background-color: #2A2A2A;
-  width: 85%;
-  height: 50vh; }
+  width: 90%;
+  height: 60em; }
   .innerSection h1 {
     font-size: 3.5em;
     margin-left: 30%; }
@@ -188,8 +188,9 @@ article h3 {
     width: 6em; }
 
 .spaceXGrid {
-  width: 73%;
+  overflow: scroll;
+  width: 90%;
   background-color: #1E1E1E;
-  height: 10em;
-  margin-left: 15%;
+  height: 40em;
+  margin-left: 5%;
   margin-top: 2%; }
