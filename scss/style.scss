@@ -220,8 +220,44 @@ article {
         background-color: #1E1E1E;
         text-decoration: none;
         margin-left: 70%;
-    }
-
-   
+    }   
 }
 
+.innerSection {
+    margin: 8%;
+    background-color: #2A2A2A; 
+    width: 85%;
+    height: 50vh;
+
+    h1 {
+        font-size: 3.5em;
+        margin-left: 30%;
+    } 
+
+}
+.inputSection {
+    margin-left: 15%;
+
+    input {
+        width: 78%;
+        height: 3em;
+        background-color: #C2C2C2;      
+        border:none; 
+    }
+    button { 
+        background-color: #3D4B5B;   
+        height: 3em;
+        border:none;
+        color:white;
+        width: 6em;     
+    }
+
+}
+
+.spaceXGrid { 
+    width: 73%;
+    background-color: #1E1E1E;
+    height: 10em;
+    margin-left: 15%;
+    margin-top:2%;
+}
