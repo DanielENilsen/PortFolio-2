@@ -95,4 +95,41 @@ article h3 {
   margin-top: -3%; }
 
 .partTwo {
-  margin-top: 100px; }
+  margin-top: 200px; }
+
+.dev__left {
+  float: left;
+  width: 35%;
+  margin-left: 5%; }
+  .dev__left h2 {
+    font-size: 2.5em; }
+
+.dev__rigth {
+  float: right; }
+  .dev__rigth img {
+    margin-top: 4%;
+    margin-left: 15%;
+    width: 70%;
+    height: 45vh; }
+
+.partThree {
+  padding-top: 40%; }
+
+.part__left {
+  float: left;
+  width: 45%; }
+  .part__left img {
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 85%; }
+
+.part__rigth {
+  float: right;
+  width: 35%;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-top: 5%; }
+  .part__rigth h2 {
+    font-size: 2.5em; }
+  .part__rigth p {
+    font-size: 1.3em; }
