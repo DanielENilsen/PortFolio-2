@@ -10,11 +10,18 @@ fetch(todayImage).then(respone => respone.json()).then(todayImageResponse => {
     imageOfToday(todayImageResponse);  
 }).catch(error => console.log(error));
 
-//Fetch SpaceX Api
+//Fetch SpaceX latest rocket lanuch
 fetch(humanLanuchRocket).then(respone => respone.json()).then(callBackRocket => {
-    console.log(callBackRocket);
     spaceXFunc(callBackRocket);
-})
+}).catch(error => console.log(error));
+
+
+//Fetch Spacex diffrect rockets
+fetch(spaceXRockets).then(response => response.json()).then(spaceXRockets => {
+    console.log(spaceXRockets);
+    spaceXDiffRocketsFunc(spaceXRockets);
+    
+}).catch(error => console.log(error));
 
 
 // Nasa Functions
@@ -24,9 +31,21 @@ var imageOfToday = function(response) {
     document.getElementById('nasaPictureRigth').innerHTML += `<img src = ${response.url}>`;
 }
 
-// SpaceX rocket Funtions
-
+//  SpaceX latest rocket lanuch
 var spaceXFunc = function(response) {    
     document.getElementById("humanSpaceXLeft").innerHTML += `<img src = ${response.links.flickr.original[2]}>`;  
     document.getElementById("humanSpaceXRigth").innerHTML += `<p> ${response.details}`;  
+}
+
+
+// SpaceX diffrect rockets 
+
+var spaceXDiffRocketsFunc = function(respone) { 
+    
+        document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3><a href = "#"> See more </a></div>`;
+        document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3></div>`;
+        document.getElementById('grBack').innerHTML += `<div class = "gridCol"><img src = "${respone[0].flickr_images[0]}"><h3>${respone[0].rocket_name}</h3></div>`;
+
+    
+    
 }

@@ -95,7 +95,7 @@ article h3 {
   margin-top: -3%; }
 
 .partTwo {
-  margin-top: 200px; }
+  margin-top: 10%; }
 
 .dev__left {
   float: left;
@@ -113,7 +113,7 @@ article h3 {
     height: 45vh; }
 
 .partThree {
-  padding-top: 40%; }
+  padding-top: 35%; }
 
 .part__left {
   float: left;
@@ -133,3 +133,33 @@ article h3 {
     font-size: 2.5em; }
   .part__rigth p {
     font-size: 1.3em; }
+
+.gridSection {
+  margin-top: 38%;
+  width: 100%;
+  height: 40em;
+  background-color: #6B6B6B; }
+
+.gridbakcend {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 5%;
+  margin-left: 6%; }
+
+.gridCol {
+  display: inline-block;
+  width: 75%;
+  height: 110%;
+  background-color: #242121; }
+  .gridCol img {
+    width: 85%;
+    padding: 2em; }
+  .gridCol a {
+    color: white;
+    padding: 0.6em;
+    border: 2px solid white;
+    height: 10%;
+    width: 20%;
+    background-color: #1E1E1E;
+    text-decoration: none;
+    margin-left: 70%; }
