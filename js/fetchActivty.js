@@ -53,7 +53,7 @@ var spaceXDiffRocketsFunc = function(respone) {
 // Past and Currect lanuch of SpaceX Function
 var pastAndCurrectFunc = function(respone) { 
     for(let i = 0; i < respone.length; i++) { 
-        document.getElementById('spaceIdGrid').innerHTML += `<div class = "spxGrid"><img src="${respone[i].links.mission_patch_small}"</div>`
+        document.getElementById('spaceIdGrid').innerHTML += `<div class = "spxGrid"><img src="${respone[i].links.mission_patch_small}"></div>`
     }
 
 }
